@@ -4,13 +4,22 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/linelist/OrderList.c 
+../src/linelist/LinkListOperaiotn.c \
+../src/linelist/LinkListTest.c \
+../src/linelist/OrderList.c \
+../src/linelist/OrderListTest.c 
 
 OBJS += \
-./src/linelist/OrderList.o 
+./src/linelist/LinkListOperaiotn.o \
+./src/linelist/LinkListTest.o \
+./src/linelist/OrderList.o \
+./src/linelist/OrderListTest.o 
 
 C_DEPS += \
-./src/linelist/OrderList.d 
+./src/linelist/LinkListOperaiotn.d \
+./src/linelist/LinkListTest.d \
+./src/linelist/OrderList.d \
+./src/linelist/OrderListTest.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

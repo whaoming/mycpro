@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include "common/linelist.h"
 
-
-
-void CreateList(SqList *L,a[],int n){
+static void CreateList(SqList *L,a[],int n){
 	int i;
 	for(i=0;i<n;i++){
 		L->data[i] = a[i];
@@ -11,7 +9,7 @@ void CreateList(SqList *L,a[],int n){
 	L->length = n;
 }
 
-void DispList(SqList *L){
+static void DispList(SqList *L){
 	int i;
 	for(i=0;i<L->length;i++){
 		printf("%d",L->data[i]);
@@ -19,20 +17,18 @@ void DispList(SqList *L){
 	printf("\n");
 }
 
-
-
-int ListLength(SqList *L){
+static int ListLength(SqList *L){
 	return L->length;
 }
 
-int ListEmpty(SqList *L){
+static int ListEmpty(SqList *L){
 	return L->length==0;
 }
 
 /**
  * 插入
  */
-int ListInsert(SqList *L,int i,ElemType e){
+static int ListInsert(SqList *L,int i,ElemType e){
 	if(i>L->length || i<0){
 		return 0;
 	}
@@ -49,7 +45,7 @@ int ListInsert(SqList *L,int i,ElemType e){
 /**
  * 获取某个位置的元素
  */
-int getElem(SqList *L,int i,ElemType *e){
+static int getElem(SqList *L,int i,ElemType *e){
 	if(i>L->length || i<1){
 		return 0;
 	}
@@ -59,7 +55,7 @@ int getElem(SqList *L,int i,ElemType *e){
 /**
  * 查看某个元素的位置
  */
-int locatElem(SqList *L,ElemType e){
+static int locatElem(SqList *L,ElemType e){
 	int i=0;
 	while(i<L->length && e!=L->data[i])
 		i++;
@@ -72,7 +68,7 @@ int locatElem(SqList *L,ElemType e){
 /**
  * 删除第i个位置的
  */
-int ListDelete(SqList *L,int i,ElemType *e){
+static int ListDelete(SqList *L,int i,ElemType *e){
 	if(i<1 || i>L->length){
 		return 0;
 	}
@@ -85,7 +81,7 @@ int ListDelete(SqList *L,int i,ElemType *e){
 
 }
 
-void orderList(){
+static void orderList(){
 	int s[] = {5,4,8,9,6,7,1,2,3,0};
 	SqList *L = (SqList *)malloc(sizeof(SqList));
 	CreateList(L,s,10);
@@ -109,9 +105,8 @@ void orderList(){
  * 判断是否为空
  * 插入
  * 按元素值查找
- *
  */
-int main(){
-	orderList();
-	return 1;
-}
+//int main(){
+//	orderList();
+//	return 1;
+//}
