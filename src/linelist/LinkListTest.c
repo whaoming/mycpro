@@ -132,6 +132,7 @@ void test_eg2_6(){
  * 有一个带头结点的单链表L(至少有一个数据节点)，
  * 设计一个算法使其元素有序递增
  */
+
 void eg2_7(LinkList *L){
 //	LinkList *s = L,*p = L->next->next,*m,*n;
 //	while(p!=NULL){
@@ -191,10 +192,24 @@ void test_eg2_7(){
 	DispList(L);
 	eg2_7(L);
 	DispList(L);
+
+void eg2_7(){
+
+}
+
+void test_eg2_7(){
+
+
 }
 
 int main(){
 	printf("main\n");
+
 	test_eg2_7();
 	return 1;
+
+
+	test_eg2_6();
+	return 0;
+
 }

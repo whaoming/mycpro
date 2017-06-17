@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include "common/linelist.h"
 
+<<<<<<< HEAD
 static void CreateList(SqList *L,ElemType a[],int n){
+=======
+static void CreateList(SqList *L,a[],int n){
+>>>>>>> aaa30689e509707e21c41aa3665aeef19e5c5082
 	int i;
 	for(i=0;i<n;i++){
 		L->data[i] = a[i];
