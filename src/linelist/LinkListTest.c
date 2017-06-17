@@ -193,23 +193,16 @@ void test_eg2_7(){
 	eg2_7(L);
 	DispList(L);
 
-void eg2_7(){
-
 }
 
-void test_eg2_7(){
 
-
-}
 
 int main(){
 	printf("main\n");
-
-	test_eg2_7();
-	return 1;
-
-
-	test_eg2_6();
+//	test_eg2_7();
+//	return 1;
+//
+//	test_eg2_6();
 	return 0;
-
 }
+
