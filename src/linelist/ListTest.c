@@ -196,10 +196,10 @@ void UnionLinkList_test(){
 		DispLinkList(LC);
 }
 
-int main(){
-//	UnionSqList_test();
-	UnionLinkList_test();
-	return 0;
-}
+//int main(){
+////	UnionSqList_test();
+//	UnionLinkList_test();
+//	return 0;
+//}
 
 
