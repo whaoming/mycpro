@@ -197,12 +197,12 @@ void test_eg2_7(){
 
 
 
-int main(){
-	printf("main\n");
-//	test_eg2_7();
-//	return 1;
-//
-//	test_eg2_6();
-	return 0;
-}
+//int main(){
+//	printf("main\n");
+////	test_eg2_7();
+////	return 1;
+////
+////	test_eg2_6();
+//	return 0;
+//}
 

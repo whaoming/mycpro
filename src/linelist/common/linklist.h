@@ -1,4 +1,4 @@
-typedef char ElemType;
+typedef int ElemType;
 
 /**
  * 单链表结构
