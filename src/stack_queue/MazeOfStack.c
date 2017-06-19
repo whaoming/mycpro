@@ -109,7 +109,7 @@ void testMgPath(){
 }
 
 
-int main(){
-	testMgPath();
-	return 0;
-}
+//int main(){
+//	testMgPath();
+//	return 0;
+//}
