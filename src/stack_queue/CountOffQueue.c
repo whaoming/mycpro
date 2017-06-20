@@ -15,6 +15,7 @@ typedef struct{
 void number(int n){
 	int e;
 	SqQueue *q = (SqQueue *)malloc(sizeof(SqQueue));
+	q->rear = q->front = -1;
 	int i;
 	for(i=1;i<=n;i++){
 		q->rear++;
